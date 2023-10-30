@@ -76,5 +76,6 @@ let compare = name1 === name2;
 console.log(compare);
 name2= name2.toLowerCase();
 console.log(name2);
+compare= name1===name2;
 console.log(compare);
 
