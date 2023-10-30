@@ -53,8 +53,9 @@ console.log(x);
 /* SCRIVI QUI LA TUA RISPOSTA */
 myName= 'nagib nasim';
 console.log(myName);
-//x=5;
-
+/*questa la commento sennò fa casino
+x=5;
+*/
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
