@@ -55,7 +55,7 @@ myName= 'nagib nasim';
 console.log(myName);
 /*questa la commento sennò fa casino
 x=5;
-*/
+*/node
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
