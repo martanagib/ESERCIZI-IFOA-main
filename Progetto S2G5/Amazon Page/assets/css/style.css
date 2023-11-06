@@ -1,1 +1,99 @@
-/* Your styles here */
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(233, 237, 238);
+}
+
+main {
+  font-weight: bold;
+}
+
+#top {
+  background-color: rgb(34, 47, 63);
+  margin: 0;
+}
+
+nav {
+  background-color: rgb(54, 71, 89);
+  color: white;
+  margin: 0px;
+  margin-top: -17px;
+  padding-left: 20px;
+}
+
+#sottotitolo {
+  background-color: rgb(245, 100, 6);
+  color: white;
+  text-align: center;
+  height: 2vw;
+  font-size: 1em;
+}
+#guida {
+  background-image: url(../images/bg-image.png);
+  text-align: center;
+  color: white;
+  height: 12vw;
+}
+
+h2 {
+  padding-top: 50px;
+}
+
+main p {
+  display: inline;
+}
+
+.centro {
+  text-align: center;
+}
+
+.immagini {
+  width: 20%;
+  height: 20vw;
+  margin: 10px;
+  margin-right: 20px;
+  margin-left: 40px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  box-shadow: 1px 1px 0px 0px;
+}
+
+#perfect {
+  margin: 10px, auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+.blu {
+  color: rgb(11, 83, 102);
+  font-size: 0.7em;
+}
+
+#amazon {
+  width: 5%;
+  padding-left: 20px;
+}
+
+.img2 {
+  width: 100%;
+}
+
+#finale {
+  background-color: rgb(34, 47, 63);
+  text-align: center;
+}
+
+#logoFinale {
+  width: 15%;
+  margin: 5%;
+}
+
+#back {
+  background-color: rgb(54, 71, 89);
+  text-align: center;
+}
+
+#bianco{
+    color:white;
+}
+ 
