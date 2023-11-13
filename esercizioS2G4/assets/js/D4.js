@@ -140,7 +140,7 @@ var nuovaStr= "sona una nuova stringa che sta per essere tagliata";
 
 function cutString(str){
     nuovaStr.split(' ');
-    let stringa=nuovaStr.trim().slice(1, -1);
+    let stringa=nuovaStr.slice(1, -1);
     return stringa;
 }
  console.log(cutString(nuovaStr));
