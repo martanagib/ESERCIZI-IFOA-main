@@ -22,4 +22,28 @@
     margin-top: 20vh;
 }
 
+.avatar{
+    margin-bottom: 50vh;
+    
+}
+ .edita{
+    margin-top:-7vh;
+ }
+
+ .bottoni {
+    text-align: center;
+ }
+
+.orizzontale{
+    margin-left: 23vw;
+    margin-right: 23vw;
+}
+
+.allinea{
+    margin:1vw;
+}
+
+.negativo{
+    margin-bottom:-10vh
+}
 
