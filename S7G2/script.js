@@ -2,7 +2,7 @@ let field = document.getElementById("field");
 const btnIns = document.getElementById("salva");
 const btnCanc = document.getElementById("cancella");
 
-
+//al click salva l'utente in localStorage
 btnIns.addEventListener ("click", function(e) {
     e.preventDefault;
     localStorage.setItem("utente", field.value)
@@ -10,6 +10,7 @@ btnIns.addEventListener ("click", function(e) {
 
 })
 
+//al click cancella l'utente dal local storage
 btnCanc.addEventListener ("click", function(e) {
     e.preventDefault;
     
@@ -18,6 +19,7 @@ btnCanc.addEventListener ("click", function(e) {
     
 })
 
+//mostra l'ultimo utente inserito
 function mostra() {
     if(localStorage.getItem("utente")){
         document.getElementById("utente").innerText= localStorage.getItem("utente");
