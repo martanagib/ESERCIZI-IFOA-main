@@ -27,6 +27,7 @@ function mostra() {
 }
 
 
+
 // Funzione per aggiornare il contatore ogni secondo
 function updateCounter() {
     // Recupera il valore corrente dal sessionStorage

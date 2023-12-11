@@ -7,6 +7,8 @@ let levels = {
     "medium": 40,
     "hard": 60
 }
+
+
 const levelSelector = document.getElementById("level");
 levelSelector.onchange = () => {
     level = levelSelector.value
@@ -42,9 +44,9 @@ function step(e) {
         points++
         document.getElementById("points").innerText = points;
      } else if (e.classList.contains("bomb") && play == 1) {
-        e.classList.add("exploded");
+        e.classList.add("explode");
         sound.play();
-        paly = 0;
+        play = 0;
         document.getElementById("gameover").style.opacity = "1";
      }
 }
@@ -54,7 +56,7 @@ function clearGrid () {
     play=1;
     points = 0;
     document.getElementById("points").innerText = "";
-    document.getElementById("gameover").style.opacity = "o";
+    document.getElementById("gameover").style.opacity = "0";
     createGrid()
 }
 
