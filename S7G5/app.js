@@ -97,7 +97,7 @@ const newRecord = {
   "imageUrl": document.getElementById("inputImageUrl").value
 }
    fetch (finalUrl, {
-    method: "PUt",
+    method: "PUT",
     headers: headers,
     body: JSON.stringify(newRecord)
 })
@@ -117,3 +117,33 @@ function reset(){
   document.getElementById("inputPrice").value = ""
   document.getElementById("inputImageUrl").value = ""
 }
+
+let details = document.getElementById("dettaglio")
+const urlParams = new URLSearchParams(window.location.search);
+const productId = urlParams.get("id");
+const showDetailsProduct = (id) =>{
+  const finalUrl= myUrl + id
+    fetch(finalUrl, {
+        headers: headers
+    })
+        .then(data => populateDetailPage(data))
+};
+
+
+function populateDetailPage(data){
+    let newDetails = `
+    <img src="${data.imageUrl}" alt="" height="300px">
+            <div class=p-5>
+                <h5>Nome prodotto: ${data.name}</h5>
+                <p>Descrizione: ${data.description}</p>
+                <p>Brand: ${data.brand}</p>
+                <p>Prezzo: ${data.price}€</p>
+            </div>`
+
+    details.innerHTML = newDetails;
+
+    
+    window.onload = function(){ const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get("id");
+    showDetailsProduct(id)}
+  }

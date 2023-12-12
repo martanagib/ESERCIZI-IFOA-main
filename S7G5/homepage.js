@@ -26,9 +26,9 @@ let newProduct =
           Modifica
         </a>
         
-        <button type="button" class="btn btn-sm btn-outline-secondary">
+        <a type="button" class="btn btn-sm btn-outline-secondary" href="./detail.html">
           Scopri di più
-        </button>
+        </a>
       </div>
     </div>
   </div>
