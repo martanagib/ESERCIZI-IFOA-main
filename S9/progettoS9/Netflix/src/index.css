@@ -1,0 +1,28 @@
+
+
+body {
+    background-color: #212529;
+    color: white;
+  }
+
+  .navbar {
+    margin-left: -10vw;
+  }
+
+  .lista {
+    display: flex;
+    justify-content: end;
+    margin-left: 33vw;
+  }
+
+  .poster {
+   width: 13vw
+
+   
+  }
+
+ h4 {
+  margin-left: -5vw;
+ }
+
+  

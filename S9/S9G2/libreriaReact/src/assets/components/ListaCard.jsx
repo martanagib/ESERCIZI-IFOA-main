@@ -1,25 +1,20 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import fantasy from "../../../fantasy.json"
 import {useState} from "react"
+import BottoniCat from './BottoniCat';
+import SingleCard from './SingleCard';
 
 function ListaCard () {
-   const [list] = useState(fantasy) 
+   const [list, setCard] = useState([]) 
+   const categories = ['fantasy', 'history', 'horror', 'romance', 'scifi']
    return (
-    <div className="d-flex justify-content-between flex-wrap">
+    <>
+    <BottoniCat categories= {categories} setCard = {setCard}/>
     {list.map((book)=>
-    <Card style={{ width: '18rem' }} key={book.asin}>
-      <Card.Img variant="top" src={book.img} />
-      <Card.Body>
-        <Card.Title>{book.title}</Card.Title>
-        <Card.Text>
-        {book.asin + ' - ' + book.price}
-        </Card.Text>
-        <Button variant="primary">aggiungi al carrello</Button>
-      </Card.Body>
-    </Card>
+    <SingleCard book={book} key={book.asin} /> 
     )}
-    </div>
+   
+    </>
   )
 }
 
